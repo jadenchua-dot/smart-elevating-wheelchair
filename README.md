@@ -1,5 +1,7 @@
 # Smart Elevating Wheelchair
 
+[![Compile sketch](https://github.com/jadenchua-dot/smart-elevating-wheelchair/actions/workflows/compile.yml/badge.svg)](https://github.com/jadenchua-dot/smart-elevating-wheelchair/actions/workflows/compile.yml)
+
 A team prototype of a manual wheelchair with a **push-button seat lift** and a **rear obstacle warning**, built with an Arduino Uno and Lego Technic. It was made to help wheelchair users reach things placed too high, like supermarket shelves or MRT card readers, without needing help.
 
 ![Final prototype](docs/images/final-prototype.jpg)

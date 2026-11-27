@@ -1,0 +1,25 @@
+# Compiles the Arduino sketch for the Uno on every push and pull request.
+name: Compile sketch
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["**.md", "docs/**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: arduino/compile-sketches@v1
+        with:
+          fqbn: arduino:avr:uno
+          libraries: |
+            - name: Servo
+          sketch-paths: |
+            - firmware/smart_wheelchair
